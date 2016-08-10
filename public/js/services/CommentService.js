@@ -17,11 +17,15 @@
     function getCommentsForAPost(){
       return $http.get(baseUrl);
     }
-    function createComment(){
-      return $http.post();
+    function createComment(comObj){
+      return $http.post(baseUrl, comObj);
     }
-    function deleteComment(){}
-    function updateComment(){}
+    function deleteComment(comId){
+      return $http.delete(baseUrl+comId);
+    }
+    function updateComment(comId,comObj){
+      return $http.put(baseUrl+comId, comObj);
+    }
 
 
   }

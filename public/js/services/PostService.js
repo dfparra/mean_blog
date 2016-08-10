@@ -27,7 +27,9 @@
     function deletePost(postId){
       return $http.delete(baseUrl+postId);
     }
-    function updatePost(){}
+    function updatePost(postId, postObj){
+      return $http.put(baseUrl+postId, postObj);
+    }
 
 
   }

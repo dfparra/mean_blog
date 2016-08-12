@@ -8,11 +8,21 @@
 
 </head>
 <body>
-  <div ng-view></div> <!--code that pLaces the views here from routes.js-->
-
   <!-- <div ng-controller='SimpleController'>
     {{message}}
   </div> -->
+  <div class="navbar row well">
+    <a href="#/" class="col-md-2 btn btn-primary">HOME</a>
+    <a href="#/profile/:userId" class="col-md-2 btn btn-primary">Profile</a>
+    <a href="#/post/:postId" class="col-md-2 btn btn-primary">Posts</a>
+    <a href="#/create" class="col-md-2 btn btn-primary">Create Post</a>
+    <a href="#/edit/:postId" class="col-md-2 btn btn-primary">Edit Post</a>
+    <a href="#/login" class="col-md-2 btn btn-primary">Login</a>
+    <a href="#/signup" class="col-md-2 btn btn-primary">Sign Up</a>
+  </div>
+
+  <div ng-view></div> <!--code that pLaces the views here from routes.js-->
+
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.js"></script>

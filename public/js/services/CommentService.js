@@ -14,8 +14,8 @@
     };
     return service;
 
-    function getCommentsForAPost(){
-      return $http.get(baseUrl);
+    function getCommentsForAPost(postId){
+      return $http.get(baseUrl + postId);
     }
     function createComment(comObj){
       return $http.post(baseUrl, comObj);
